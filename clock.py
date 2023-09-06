@@ -8,8 +8,11 @@ pygame.init()
 screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
 clock = pygame.time.Clock()
 
+# Get the screen height
+h = screen.get_height();
+
 # Set up the font
-font = pygame.font.Font('./dejavu-sans-mono.book.ttf', 300)
+font = pygame.font.Font('./dejavu-sans-mono.book.ttf', int(200*h/768))
 
 # Set up the colors
 black = (0, 0, 0)
